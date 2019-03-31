@@ -1,7 +1,7 @@
-let countdown = 10;
+let countdown = 10 * 60;
 let label = document.querySelector(".js-stream-counter");
 
-let streamCounter = setInterval(function() {
+let streamCounter = setInterval(function () {
     if (countdown <= 0) {
         clearInterval(streamCounter);
         label.innerHTML = "NOW";
